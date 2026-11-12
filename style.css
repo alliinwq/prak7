@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.subtitle {
+    color: #f5bd24;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #f5bd24;
+    color: #111;
+    text-decoration: none;
+    padding: 14px 28px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+.header {
+    background-color: #191919;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #f5bd24;
+}
+
+.navigation {
+    display: flex;
+    gap: 25px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #f5bd24;
+}
+
+.header-phone {
+    color: #f5bd24;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 550px;
+    background-image: url("https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1600");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    min-height: 550px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0.35));
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 550px;
+    color: #ddd;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text p {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.advantages {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.advantages div {
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages strong {
+    color: #f5bd24;
+    font-size: 25px;
+}
+
+.advantages span {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.services {
+    background-color: #191919;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading > p:last-child {
+    color: #aaa;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #242424;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    border-color: #f5bd24;
+}
+
+.service-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    color: #f5bd24;
+}
+
+.service-card p {
+    color: #aaa;
+}
+
+.price-table {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.price-row strong {
+    color: #f5bd24;
+    white-space: nowrap;
+}
+
+.price-header {
+    background-color: #f5bd24;
+    color: #111;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+
+.price-note {
+    max-width: 800px;
+    margin: 15px auto;
+    color: #999;
+    font-size: 13px;
+}
+
+.schedule {
+    background-color: #191919;
+}
+
+.schedule-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.schedule-box {
+    width: 50%;
+    background-color: #242424;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.schedule-box div {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+}
+
+.schedule-box div:last-child {
+    border-bottom: none;
+}
+
+.schedule-box strong {
+    color: #f5bd24;
+    white-space: nowrap;
+}
+
+.schedule-box .closed {
+    color: #ff5555;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    background-color: #242424;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    border-bottom: 3px solid #f5bd24;
+}
+
+.contact-card h3 {
+    color: #f5bd24;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.contact-card a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    color: #f5bd24;
+}
+
+.address {
+    text-align: center;
+    margin-top: 40px;
+    color: #bbb;
+}
+
+.address p {
+    margin: 8px 0;
+}
+
+.footer {
+    background-color: #191919;
+    padding: 25px 0;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer p {
+    color: #999;
+    font-size: 14px;
+}
+
+.footer > div > a:last-child {
+    color: #f5bd24;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .header-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navigation {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        gap: 25px;
+    }
+
+    .advantages {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 55px 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .navigation {
+        gap: 12px;
+    }
+
+    .navigation a {
+        font-size: 14px;
+    }
+
+    .hero,
+    .hero-overlay {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        height: 250px;
+    }
+
+    .advantages {
+        gap: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .schedule-box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .schedule-box div {
+        font-size: 13px;
+    }
+
+    .contacts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-row {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
